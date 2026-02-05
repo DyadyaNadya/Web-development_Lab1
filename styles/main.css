@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Dodo";
+    src: url(/fonts/Dodo/DodoRounded_v2-Medium.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
