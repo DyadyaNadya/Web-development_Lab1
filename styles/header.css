@@ -1,26 +1,53 @@
 header{
-    background: linear-gradient(rgb(0, 255, 0), rgb(125, 222, 125));
+    /* background: linear-gradient(rgb(0, 255, 0), rgb(90, 114, 90)); */
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.322);
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Dodo';
+    font-family: 'Exo';
     align-content: center;
-    
+    justify-content: space-between;
 
 }
 
 
-header h1{
-    font-size: 2.8rem;
-    line-height: 1.5rem;
+.naming-wrapper{
+    display: flex;
+
+}
+
+.naming{
+    font-size: 2.5rem;
     align-content: center;
     text-align: center;
     padding-bottom: 0.6rem ;
-
+    background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 20%, rgb(65, 65, 65) 35%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     
+}
+
+.logo{
+    margin: 0 1rem;
 }
 
 .logo-image{
     width: 120px;
     height: auto;
+}
+
+.registration-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-block h2{
+    margin: 0.3rem 0;
+}
+
+.registration-phone{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 2.5rem;
 }
