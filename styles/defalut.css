@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Dodo";
+    src: url(/fonts/Dodo/DodoRounded_v2-Medium.otf);
+
+    font-family: "Exo";
+    src: url(/fonts/Exo_2/Exo2-VariableFont_wght.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
