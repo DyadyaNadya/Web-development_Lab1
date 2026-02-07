@@ -6,6 +6,11 @@
     src: url(/fonts/Exo_2/Exo2-VariableFont_wght.ttf);
 }
 
+:root{
+    --red: red;
+    --light-black: rgba(0, 0, 0, 0.175);
+}
+
 
 body{
     margin: 0;
