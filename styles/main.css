@@ -4,13 +4,6 @@ main{
     /* border: rgba(111, 111, 111, 0.255) 1px solid; */
 }
 
-h1{
-    background: linear-gradient(to right, rgb(255, 0, 0) 5%, rgb(255, 0, 0) 15%, rgb(65, 65, 65) 55%, rgb(0, 0, 0) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
 .news-block{
     font-size: 2rem;
     font-family: 'Exo';
@@ -68,4 +61,16 @@ h1{
 
 .list-wrapper li:hover{
     box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.468);
+}
+
+
+.full-services{
+    background: var(--red);
+    cursor: pointer;
+    color: white;
+}
+
+
+.full-services:hover{
+    box-shadow: 0 0 5px 1px var(--light-black);
 }

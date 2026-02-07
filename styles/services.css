@@ -1,0 +1,18 @@
+.services-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.services-section h1{
+    font-size: 3rem;
+
+}
+
+.diagnositcs{
+    border: 1px var(--light-black) solid;
+    border-radius: 15px;
+}
+
+.diagnositcs-list{
+    list-style: none;
+}

@@ -15,5 +15,16 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Exo';
 }
 
+a{
+    text-decoration: none;
+}
+
+h1{
+    background: linear-gradient(to right, rgb(255, 0, 0) 5%, rgb(255, 0, 0) 15%, rgb(65, 65, 65) 55%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
