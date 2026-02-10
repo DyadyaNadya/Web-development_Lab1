@@ -1,0 +1,71 @@
+.spec-category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    margin: 2rem 0;
+    gap: 30px;
+
+}
+
+.specialist-card{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin: 1rem;
+    background: transparent;
+    overflow: hidden;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.specialist-card:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 25px var(--light-black);
+}
+
+.img-container{
+    height: 230px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container img{
+    height: 100%;
+}
+
+.description{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 185px;
+    font-size: 0.9rem ;
+}
+
+.description p{
+    margin: 0.5rem;
+}
+
+.experience{
+    color: var(--red);
+}
+
+.sign-up{
+    background: var(--red);
+    border-radius: 15px;
+    padding: 1rem;
+    color: white;
+    font-family: 'Exo';
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    margin: 1rem;
+    
+}
+
+.sign-up:hover{
+    box-shadow: 0px 5px 10px var(--light-black);
+    cursor: pointer;
+}

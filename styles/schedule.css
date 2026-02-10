@@ -1,0 +1,81 @@
+.schedule-table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    margin: 3rem 0;
+}
+      
+thead {
+     background-color: var(--light-red);
+}
+        
+th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid var(--light-black);
+    font-size: 16px;
+}
+        
+th:first-child {
+    width: 220px;
+}
+        
+td {
+    padding: 16px 15px;
+    border-bottom: 1px solid var(--light-red);
+    vertical-align: top;
+}
+        
+tr:hover {
+    background-color: #fff0f0;
+}
+        
+.specialist-name {
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 5px;
+}
+        
+.specialist-specialty {
+    font-size: 14px;
+    color: #666;
+}
+        
+.schedule-cell {
+    min-height: 60px;
+}
+        
+.work-slot {
+
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+}
+        
+        
+.day-off {
+    color: #999;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+        
+.day-header {
+    position: relative;
+}
+        
+.day-number {
+    display: inline-block;
+    background-color: var(--red);
+    color: white;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 14px;
+}
