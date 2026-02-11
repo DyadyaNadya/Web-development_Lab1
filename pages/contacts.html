@@ -33,14 +33,15 @@
             <li><a href="">Заглушка</a></li>
         </ul>
     </nav>
-</body>
-<main>
-    <h1>Клиника "МЕДэкспонента" в Перми</h1>
+    <main>
+        <h1>Клиника "МЕДэкспонента" в Перми</h1>
     <div class="address-container">
         <p>г.Пермь, ул.Пушкина, д.Колотушкина</p>
         <p>ПН-СБ: 8:00 - 22:00</p>
-        <p>ВС: Исключительно по записи за неделю до даты приема</p>
-    </div>
+        <p>ВС: Исключительно по записи за неделю до приема
+            
+        <div id="map" style="width: 70%; height: 600px; margin: 20px 0;"></div>
+
     <div class="contacts-container">
         <section></section>
         <section class="phone-section">
@@ -51,8 +52,44 @@
             <h2>Электронная почта для обращений</h2>
             <p class="email">medexpo@gmail.com</p>
         </section>
-
+        
     </div>
 </main>
 <footer></footer>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=
+&lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+        ymaps.ready(init);
+        
+        function init() {
+            var clinicLocation = [58.005291, 56.233629];
+            
+            var myMap = new ymaps.Map("map", {
+                center: clinicLocation,
+                zoom: 17
+            });
+            
+            var myPlacemark = new ymaps.Placemark(clinicLocation, {
+                balloonContent: '<strong>Клиника "МЕДэкспонента"</strong><br>г.Пермь, ул.Пушкина, д.Колотушкина<br>Телефон: 8 800-555-35-35'
+            }, {
+                preset: 'islands#redMedicalIcon' 
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+            
+        
+            myPlacemark.balloon.open();
+            
+            myMap.controls
+                .remove('geolocationControl')
+                .remove('trafficControl')
+                .remove('typeSelector')
+                .remove('fullscreenControl');
+                
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                myMap.behaviors.disable(['drag', 'scrollZoom']);
+            }
+        }
+    </script>
+</body>
 </html>
