@@ -77,3 +77,137 @@ main{
 .full-services:hover{
     box-shadow: 0 0 5px 1px var(--light-black);
 }
+
+
+
+
+@media (max-width: 1200px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 95%;
+    }
+    
+    .news-block {
+        font-size: 1.8rem;
+    }
+    
+    .service-list h1 {
+        font-size: 2.5rem;
+    }
+    
+    .list-wrapper {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .news-block {
+        font-size: 1.5rem;
+    }
+    
+    .news-block article {
+        width: 90%;
+        margin: 0.5rem 0;
+        padding: 0.6rem;
+    }
+    
+    .service-list {
+        padding: 2rem 0 1rem 0;
+    }
+    
+    .service-list h1 {
+        font-size: 2rem;
+        margin: 0.8rem 0;
+        text-align: center;
+    }
+    
+    .list-wrapper {
+        font-size: 1.2rem;
+    }
+    
+    .list-wrapper li {
+        margin: 0.8rem 0;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .news-block article {
+        width: 95%;
+        font-size: 0.9em;
+    }
+    
+    .service-list h1 {
+        font-size: 1.8rem;
+    }
+    
+    .list-wrapper {
+        font-size: 1.1rem;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        padding: 0 8px;
+    }
+    
+    .news-block h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .news-block article {
+        width: 100%;
+        font-size: 0.85em;
+        margin: 0.4rem 0;
+        padding: 0.5rem;
+    }
+    
+    .service-list h1 {
+        font-size: 1.5rem;
+    }
+    
+    .list-wrapper {
+        font-size: 1rem;
+    }
+    
+    .list-wrapper li {
+        margin: 0.6rem 0;
+        padding: 0.6rem;
+        border-radius: 15px;
+    }
+    
+    .service-list {
+        padding: 1.5rem 0 0.8rem 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .news-block h1 {
+        font-size: 1.4rem;
+    }
+    
+    .service-list h1 {
+        font-size: 1.3rem;
+    }
+    
+    .list-wrapper {
+        font-size: 0.9rem;
+    }
+    
+    .news-block article {
+        font-size: 0.8em;
+    }
+}

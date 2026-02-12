@@ -50,3 +50,78 @@ header{
     font-weight: 500;
     margin: 0 2.5rem;
 }
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+    
+    .naming {
+        font-size: 2rem;
+    }
+    
+    .logo-image {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .naming-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .naming {
+        font-size: 1.8rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .logo {
+        margin: 0.5rem 0;
+    }
+    
+    .logo-image {
+        width: 90px;
+    }
+    
+    .registration-block {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .registration-block h2 {
+        font-size: 1.2rem;
+        margin: 0.2rem 0;
+    }
+    
+    .registration-phone {
+        font-size: 1.3rem;
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .naming {
+        font-size: 1.5rem;
+    }
+    
+    .logo-image {
+        width: 70px;
+    }
+    
+    .registration-block h2 {
+        font-size: 1rem;
+    }
+    
+    .registration-phone {
+        font-size: 1.1rem;
+    }
+}
